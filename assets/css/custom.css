@@ -20,6 +20,7 @@ form.sidebar-form {
 }
 
 .side-nav .subheader {
+	padding-left: 20px;
 	color: #99AAB5;
 }
 
@@ -37,7 +38,7 @@ div.page-announce {
 	height: auto;
 	background-color: #7289DA;
 	padding: 40px;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 h1.page-announce-text {
@@ -229,6 +230,27 @@ thead {
 
 .guild-icon {
 	width: 40px;
+}
+
+.guild-icon-sidebar {
+	width: 35px;
+	margin: 0 15px;
+}
+
+.collapsible-header {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	padding: 8px 16px !important; 
+}
+
+.collapsible-body {
+	background-color: #2C2F33 !important;
+}
+
+.collapsible-body li a {
+	padding-left: 45px !important;
+	color: #99AAB5;
 }
 
 @media (max-width: 320px) {
