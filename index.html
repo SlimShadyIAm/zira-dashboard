@@ -21,7 +21,7 @@
 				</div>
 				<a href="#!user"><img class="circle" src="https://images-ext-1.discordapp.net/external/jGKGuHI962voYxT22snwkvKiJY67BFS9k-N0besaWDI/https/cdn.discordapp.com/avatars/148359099782791168/b34cb26203f7b27eeaa2bd28571dd36d.png"></a>
 				<a href="#!name"><span class="white-text name">Welcome back,</span></a>
-				<a href="#!email"><span class="white-text email">user!</span></a>
+				<a href="#!email"><span class="white-text email">JakeyPrime#1337!</span></a>
 			</div>
 		</li>
 
@@ -92,57 +92,36 @@
 				</div>
 
 				<div class="container">
-					<div class="quick-links">
-						<h3 class="section-title center-align">Quick Links</h3>
-						<div class="row">
-							<div class="col l3 s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Mod Handbook"><a class="waves-effect waves-light btn-large"
-								 href="#">Mod Handbook</a></div>
-							<div class="col l3 s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Staff Applications"><a
-								 class="waves-effect waves-light btn-large" href="#">Staff Applications</a></div>
-							<div class="col l3 s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Name Guidelines"><a class="waves-effect waves-light btn-large"
-								 href="#">User Guidelines</a></div>
-							<div class="col l3 s12 tooltipped" data-position="top" data-delay="50" data-tooltip="Issue Tracker"><a class="waves-effect waves-light btn-large"
-								 href="#">Issue Tracker</a></div>
-							<div class="col l4 offset-l4 s12 tooltipped" data-position="top" data-delay="50" data-tooltip="OTRS Support Site"><a
-								 class="waves-effect waves-light btn-large" href="#">Support Site</a></div>
-						</div>
-					</div>
-
-					<h3 class="center-align section-title">Current Staff Members</h3>
+					
 					<div class="custom-responsive">
-						<table class="striped hover centered">
+						<table class="centered z-depth-4">
 							<thead>
 								<tr>
-									<th>Username</th>
-									<th>Access Level</th>
-									<th>Last Site Login</th>
-									<th>TFA Active?</th>
+									<th></th>
+									<th>Guild name</th>
+									<th>Actions</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr>
-									<td>MichaelGScott</td>
-									<td>Administrator</td>
-									<td>2017-03-31</td>
-									<td><i class="text-green material-icons">check</i></td>
+								<tr class="hover">
+									<td><img class="guild-icon" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"></td>
+									<td>ChromeOS</td>
+									<td><a class="waves-effect waves-light btn">CONFIG</a></td>
 								</tr>
 								<tr>
-									<td>JimHalpert</td>
-									<td>Sales</td>
-									<td>2017-03-31</td>
-									<td><i class="text-green material-icons">check</i></td>
+									<td><img class="guild-icon" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"></td>
+									<td>ChromeOS</td>
+									<td><a class="waves-effect waves-light btn">CONFIG</a></td>
 								</tr>
 								<tr>
-									<td>KevinMalone</td>
-									<td>Accounting</td>
-									<td>2017-03-31</td>
-									<td><i class="text-red material-icons">close</i></td>
+									<td><img class="guild-icon" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"></td>
+									<td>ChromeOS</td>
+									<td><a class="waves-effect waves-light btn">CONFIG</a></td>
 								</tr>
 								<tr>
-									<td>PamBeesly</td>
-									<td>Reception</td>
-									<td>2017-03-31</td>
-									<td><i class="text-green material-icons">check</i></td>
+									<td><img class="guild-icon" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"></td>
+									<td>ChromeOS</td>
+									<td><a class="waves-effect waves-light btn">CONFIG</a></td>
 								</tr>
 							</tbody>
 						</table>
@@ -173,33 +152,7 @@
 			closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
 			draggable: true // Choose whether you can drag to open on touch screens
 		});
-		$(document).ready(function () {
-			$('.tooltipped').tooltip({
-				delay: 50
-			});
-		});
-		$('select').material_select();
-		$('.collapsible').collapsible();
 	</script>
-	<div class="fixed-action-btn horizontal tooltipped" data-position="top" dattooltipped" data-position="top" data-delay="50"
-	 data-tooltip="Quick Links">
-		<a class="btn-floating btn-large red">
-			<i class="large material-icons">mode_edit</i>
-		</a>
-		<ul>
-			<li><a class="btn-floating red tooltipped" data-position="top" data-delay="50" data-tooltip="Handbook" href="#"><i
-					 class="material-icons">insert_chart</i></a></li>
-			<li><a class="btn-floating yellow darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Staff Applications"
-				 href="#"><i class="material-icons">format_quote</i></a></li>
-			<li><a class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Name Guidelines" href="#"><i
-					 class="material-icons">publish</i></a></li>"
-			<li><a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Issue Tracker" href="#"><i
-					 class="material-icons">attach_file</i></a></li>
-			<li><a class="btn-floating orange tooltipped" data-position="top" data-delay="50" data-tooltip="Support" href="#"><i
-					 class="material-icons">person</i></a></li>
-		</ul>
-	</div>
-	</div>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
 
