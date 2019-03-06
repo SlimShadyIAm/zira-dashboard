@@ -260,6 +260,16 @@ thead {
 	color: 	#9fd5ef;
 }
 
+.channel-name {
+	background-color: rgba(114,137,218,.1);
+    color: #7289da;
+}
+
+.btn-icon {
+	padding: 0 15px;
+	margin-right: 10px;
+}
+
 @media (min-width: 1024px) {
 	.boxes-wrapper {
 		display: flex;
