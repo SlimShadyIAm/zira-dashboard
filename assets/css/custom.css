@@ -236,6 +236,10 @@ thead {
 	margin: 0 15px;
 }
 
+.guild-icon-announce {
+	width: 45px;
+}
+
 .collapsible-header {
 	display: flex;
 	align-items: center;
@@ -252,12 +256,20 @@ thead {
 	color: #99AAB5;
 }
 
+.footer-copyright a {
+	color: 	#9fd5ef;
+}
+
 @media (min-width: 1024px) {
 	.boxes-wrapper {
 		display: flex;
 		align-items: center;
 		justify-content: start;
 		flex-direction: row;
+	}
+
+	.main-content {
+		margin-top: 90px;
 	}
 }
 
