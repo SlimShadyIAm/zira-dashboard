@@ -1,14 +1,20 @@
 @media (min-width:993px) {
+
 	main,
 	footer {
 		padding-left: 300px;
 	}
 
 }
+
 /*  Sidebar */
 
 i.blurple-item {
 	color: #7289DA !important;
+}
+
+.blurple {
+	background-color: #7289DA !important;
 }
 
 form.sidebar-form {
@@ -31,6 +37,7 @@ form.sidebar-form {
 .side-nav .divider {
 	background-color: #99AAB5;
 }
+
 /*  End sidebar */
 
 div.page-announce {
@@ -59,6 +66,7 @@ body {
 main {
 	flex: 1 0 auto;
 }
+
 .page-footer {
 	padding-top: 0 !important;
 	height: 0;
@@ -204,7 +212,8 @@ div.quick-links a {
 }
 
 
-.content, body {
+.content,
+body {
 	background-color: #2C2F33;
 }
 
@@ -213,15 +222,16 @@ div.quick-links a {
 }
 
 table {
-	background-color:#23272A;
+	background-color: #23272A;
 	color: #99AAB5;
 	border-radius: 10px;
 	margin: 0 auto;
 }
 
-table td {
+/* table td {
 	padding: 25px;
-}
+} */
+
 thead {
 	color: #fff;
 	border-bottom-color: #99AAB5;
@@ -244,7 +254,7 @@ thead {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	padding: 8px 16px !important; 
+	padding: 8px 16px !important;
 }
 
 .collapsible-body {
@@ -257,12 +267,12 @@ thead {
 }
 
 .footer-copyright a {
-	color: 	#9fd5ef;
+	color: #9fd5ef;
 }
 
 .channel-name {
-	background-color: rgba(114,137,218,.1);
-    color: #7289da;
+	background-color: rgba(114, 137, 218, .1);
+	color: #7289da;
 }
 
 .btn-icon {
@@ -283,9 +293,9 @@ thead {
 	}
 }
 
-.boxes-wrapper .xl5 { 
+.boxes-wrapper .xl5 {
 	margin-left: auto;
-	margin-right:auto;
+	margin-right: auto;
 }
 
 .message-preview-outer {
@@ -297,7 +307,8 @@ thead {
 	width: 100%;
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
-	padding: 10px;
+	padding: 20px;
+	color: #fff;
 }
 
 .message-header {
@@ -305,9 +316,76 @@ thead {
 	font-size: 18px;
 	width: 100%;
 	background-color: #7289DA;
-	padding: 10px;
+	padding: 10px 20px;
 	border-top-left-radius: 8px;
 	border-top-right-radius: 8px;
+}
+.btn-small {
+	padding: 0 0.75em
+}
+
+.tiny {
+	font-size: 1em !important;
+}
+
+.roles {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+.role {
+	-webkit-box-sizing: border-box;
+	border: 1px solid;
+	border-radius: 11px;
+	box-sizing: border-box;
+	font-size: 12px;
+	font-weight: 500;
+	height: 22px;
+	margin: 0 4px 4px 0;
+	padding: 4px;
+	border-color: rgb(66, 133, 244);
+	-webkit-box-align: center;
+	align-items: center;
+	display: flex;
+	vertical-align: baseline;
+}
+
+.role-button {
+	border-radius: 50%;
+    height: 12px;
+    margin-right: 4px;
+	width: 12px;
+	background-color: rgb(66, 133, 244);
+}
+
+.role-name {
+	margin-right: 4px;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0 10px;
+    padding: 0;
+	vertical-align: baseline;
+	color: #fff;
+}
+
+.message-header label {
+	color: #fff;
 }
 
 @media (max-width: 320px) {

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Control Panel</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/discord-message.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <ul id="slide-out" class="side-nav fixed z-depth-4">
+        <li>
+            <div class="userView">
+                <div class="background">
+                    <img src="assets/img/user-background.png">
+                </div>
+                <a href="#!user"><img class="circle" src="https://images-ext-1.discordapp.net/external/jGKGuHI962voYxT22snwkvKiJY67BFS9k-N0besaWDI/https/cdn.discordapp.com/avatars/148359099782791168/b34cb26203f7b27eeaa2bd28571dd36d.png"></a>
+                <a href="#!name"><span class="white-text name">Welcome back,</span></a>
+                <a href="#!email"><span class="white-text email">JakeyPrime#1337!</span></a>
+            </div>
+        </li>
+
+        <li><a class="active" href="index.html"><i class="material-icons blurple-item">dashboard</i>Dashboard</a></li>
+        <li>
+            <div class="divider"></div>
+        </li>
+
+        <li><a class="subheader">Management</a></li>
+        <li class="no-padding">
+            <ul class="collapsible">
+                <li>
+                    <div class="collapsible-header white-text"><img src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"
+                            alt="" class="guild-icon-sidebar">r/ChromeOS</div>
+                    <ul class="collapsible-body no-padding">
+                        <li><a href="#"><i class="material-icons blurple-item">info</i>Guild info</a></li>
+                        <li><a href="#"><i class="material-icons blurple-item">settings</i>Configuration</a></li>
+                    </ul>
+                </li>
+                <li>
+            </ul>
+        </li>
+        <!-- <li><a href="names.html"><i class="material-icons blurple-item">thumbs_up_down</i>Name Approvals</a></li> -->
+    </ul>
+    <main>
+        <section class="content">
+            <div class="page-announce valign-wrapper"><a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only"><i
+                        class="material-icons">menu</i></a>
+                <img class="guild-icon-announce" style="margin-left: 20px;" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp">
+                <h1 class="page-announce-text valign" style="margin-left: 20px">
+                    // Role config </h1>
+            </div>
+            <div class="container">
+                <div class="message-preview-outer z-depth-4">
+                    <div class="message-header">
+                        Message Preview
+                    </div>
+                    <div class="message-body">
+                        <div class="message-group hide-overflow">
+                            <div class="avatar-large animate" style="background-image: url(&quot;https://cdn.discordapp.com/embed/avatars/0.png&quot;);"></div>
+                            <div class="comment">
+                                <div class="message first">
+                                    <h2 style="line-height: 16px;"><span class="username-wrapper v-btm"><strong class="user-name">Discord
+                                                Bot</strong><span class="bot-tag">BOT</span></span></span><span class="timestamp">Today
+                                            at 6:13 PM</span></h2>
+                                    <div class="message-text">
+                                        <div class="markup">Hello this is a message yes</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="message-preview-outer z-depth-4">
+                    <div class="message-header">
+                        <input type="checkbox" id="normal" />
+                        <label for="normal">Normal role</label>
+                    </div>
+                    <div class="message-body" id="normal-body">
+                        <table class="centered">
+                            <thead>
+                                <th>Role</th>
+                                <th>Emoji</th>
+                                <th>Actions</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="roles">
+                                            <div class="role">
+                                                <a class="role-button"></a>
+                                                <div class="role-name">Role</div>
+                                            </div>
+                                        </div>
+                                    </td>
+
+                                    <td>asjdkflasdjklsdlkfj</td>
+                                    <td>
+                                        <a href="#" class="btn btn-small" style="margin-right: 10px;"><i class="material-icons tiny">settings</i></a>
+                                        <a href="#" class="btn red btn-small"><i class="material-icons tiny">close</i></a>
+
+                                    </td>
+                                </tr>
+                              
+                                <tr>
+                                    <td colspan="3">
+                                        <a href="#" class="btn btn-floating blurple"><i class="material-icons">add</i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="message-preview-outer z-depth-4">
+                    <div class="message-header">
+                        <input type="checkbox" id="toggle" />
+                        <label for="toggle">Toggle role</label>
+                    </div>
+                    <div class="message-body" id="toggle-body">
+
+                    </div>
+                </div>
+
+                <div class="message-preview-outer z-depth-4">
+                    <div class="message-header">
+                        <input type="checkbox" id="multi" />
+                        <label for="multi">Multi role</label>
+                    </div>
+                    <div class="message-body" id="multi-body">
+
+                    </div>
+                </div>
+                <div class="message-preview-outer z-depth-4">
+                    <div class="message-header">
+                        <input type="checkbox" id="remove" />
+                        <label for="remove">Remove role</label>
+                    </div>
+                    <div class="message-body" id="remove-body">
+
+                    </div>
+                </div>
+                <div class="col s6 push-s3">
+                    <div class="message-preview-outer z-depth-4">
+                        <div class="message-header">
+                            <input type="checkbox" id="once" />
+                            <label for="once">One-time role</label>
+                        </div>
+                        <div class="message-body" id="once-body">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-align" style="margin: 30px 0 20px;">
+                <a href="#" class="btn btn-large">Save changes</a>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="container">
+                Created by <a href="https://github.com/SlimShadyIAm">SlimShadyIAm#1337</a>.
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script>
+        $('.collapsible').collapsible();
+        $(document).ready(function () {
+            $('#normal-body').hide();
+            $('#toggle-body').hide();
+            $('#multi-body').hide();
+            $('#remove-body').hide();
+            $('#once-body').hide();
+        });
+        // $('#n-body').hide();
+        $('.button-collapse').sideNav({
+            menuWidth: 300, // Default is 300
+            edge: 'left', // Choose the horizontal origin
+            closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+
+        $('#normal').click(function () {
+            $('#normal-body').toggle(this.checked);
+        })
+        $('#toggle').click(function () {
+            $('#toggle-body').toggle(this.checked);
+        })
+        $('#remove').click(function () {
+            $('#remove-body').toggle(this.checked);
+        })
+        $('#multi').click(function () {
+            $('#multi-body').toggle(this.checked);
+        })
+        $('#once').click(function () {
+            $('#once-body').toggle(this.checked);
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+
+</html>
