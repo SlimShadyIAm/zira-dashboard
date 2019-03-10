@@ -84,9 +84,9 @@
                     <div class="message-body" id="normal-body">
                         <table class="centered">
                             <thead>
-                                <th>Role</th>
-                                <th>Emoji</th>
-                                <th>Actions</th>
+                                <th style="width: 33%;">Role</th>
+                                <th style="width: 33%;">Emoji</th>
+                                <th style="width: 33%;">Actions</th>
                             </thead>
                             <tbody>
                                 <tr>
@@ -99,14 +99,39 @@
                                         </div>
                                     </td>
 
-                                    <td>asjdkflasdjklsdlkfj</td>
+                                    <td><i class="fa fa-heart red-text"></i></td>
                                     <td>
                                         <a href="#" class="btn btn-small" style="margin-right: 10px;"><i class="material-icons tiny">settings</i></a>
                                         <a href="#" class="btn red btn-small"><i class="material-icons tiny">close</i></a>
-
                                     </td>
                                 </tr>
-                              
+                                <tr>
+                                    <td class="flex-center" colspan="2" style="padding-left: 10px; width: 66%">
+                                        <div class="row">
+                                            <div class="input-field col s5 push-s2">
+                                                <select>
+                                                    <option value="" disabled selected>Choose a role</option>
+                                                    <option value="1">Admin</option>
+                                                    <option value="2">Mod</option>
+                                                    <option value="3">Member</option>
+                                                </select>
+                                            </div>
+                                            <div class="input-field col s5 push-s2">
+                                                <select>
+                                                    <option value="" disabled selected>Choose an emoji</option>
+                                                    <option value="1" data-icon="https://media.discordapp.net/attachments/486933825893433375/554435871563186177/emoji.png">Choice
+                                                        1</option>
+                                                    <option value="2" data-icon="https://cdn.discordapp.com/attachments/486933825893433375/554435984872439822/568882952667152emoji.gif">Choice
+                                                        2</option>
+                                                    <option value="3" data-icon="https://cdn.discordapp.com/attachments/486933825893433375/554435994544242728/568882962165776emoji.gif">Choice
+                                                        3</option>
+                                                </select>
+                                            </div>
+                                    <td style="width: 33%">
+                                            <a href="#" class="btn btn-small green" style="margin-right: 10px;"><i class="material-icons tiny">check</i></a>
+                                        <a href="#" class="btn red btn-small"><i class="material-icons tiny">close</i></a>
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td colspan="3">
                                         <a href="#" class="btn btn-floating blurple"><i class="material-icons">add</i></a>
@@ -116,7 +141,6 @@
                         </table>
                     </div>
                 </div>
-
 
                 <div class="message-preview-outer z-depth-4">
                     <div class="message-header">
@@ -171,7 +195,7 @@
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script>
         $('.collapsible').collapsible();
         $(document).ready(function () {
@@ -180,15 +204,16 @@
             $('#multi-body').hide();
             $('#remove-body').hide();
             $('#once-body').hide();
+
         });
-        // $('#n-body').hide();
+        $('.dropdown-trigger').dropdown();
         $('.button-collapse').sideNav({
             menuWidth: 300, // Default is 300
             edge: 'left', // Choose the horizontal origin
             closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
             draggable: true // Choose whether you can drag to open on touch screens
         });
-
+        $('select').material_select();
         $('#normal').click(function () {
             $('#normal-body').toggle(this.checked);
         })
