@@ -57,6 +57,28 @@ h1.page-announce-text {
 	margin-left: 50px;
 }
 
+.announcement {
+	width: 100%;
+	padding: 5px 20px;
+	border-radius: 8px;
+	background-color: #7289DA;
+	margin-bottom: 20px;
+}
+
+.announcement p code {
+	background-color: rgba(0, 0, 0, 0.15);
+	padding: 5px;
+	margin: 0 5px;
+	border-radius: 5px;
+}
+
+.announcement p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	color: #fff;
+}
+
 body {
 	display: flex;
 	min-height: 100vh;
