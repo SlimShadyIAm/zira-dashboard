@@ -417,6 +417,21 @@ thead {
 	margin-top: 0;
 }
 
+.premium {
+	padding: 10px;
+	color: #fff;
+	margin-bottom: 10px;
+	font-weight: 300;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 4px;
+}
+
+.premium i {
+	display: block;
+}
+
 @media (max-width: 320px) {
 	.page-announce {
 		min-height: 40px;
