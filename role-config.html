@@ -449,6 +449,8 @@
                                                             3</option>
                                                     </select>
                                                 </div>
+                                            </div>
+                                        </td>
                                         <td style="width: 33%">
                                             <a href="#" class="btn btn-small green lighten-1" style="margin-right: 10px;"><i
                                                     class="material-icons tiny">check</i></a>
@@ -492,7 +494,7 @@
         });
 
         $('.dropdown-trigger').dropdown();
-        
+
         $('.button-collapse').sideNav({
             menuWidth: 300, // Default is 300
             edge: 'left', // Choose the horizontal origin
@@ -501,7 +503,7 @@
         });
 
         $('select').material_select();
-        
+
         $('#normal').click(function () {
             $('#normal-body').toggle(this.checked);
             if (this.checked) {

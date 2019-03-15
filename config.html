@@ -67,29 +67,62 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr class="hover">
+								<tr>
 									<td> <span class="channel-name">#welcome</span></td>
 									<td>123456789</td>
-									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a class="waves-effect waves-light btn blurple btn-icon"><i
-											 class="material-icons">visibility</i></a></td>
+									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a
+										 class="waves-effect waves-light btn blurple btn-icon"><i class="material-icons">visibility</i></a></td>
 								</tr>
-								<tr class="hover">
+								<tr>
 									<td> <span class="channel-name">#welcome</span></td>
 									<td>123456789</td>
-									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a class="waves-effect waves-light btn blurple btn-icon"><i
-											 class="material-icons">visibility</i></a></td>
+									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a
+										 class="waves-effect waves-light btn blurple btn-icon"><i class="material-icons">visibility</i></a></td>
 								</tr>
-								<tr class="hover">
+								<tr>
 									<td> <span class="channel-name">#welcome</span></td>
 									<td>123456789</td>
-									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a class="waves-effect waves-light btn blurple btn-icon"><i
-											 class="material-icons">visibility</i></a></td>
+									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a
+										 class="waves-effect waves-light btn blurple btn-icon"><i class="material-icons">visibility</i></a></td>
 								</tr>
-								<tr class="hover">
+								<tr>
 									<td> <span class="channel-name">#welcome</span></td>
 									<td>123456789</td>
-									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a class="waves-effect waves-light btn blurple btn-icon"><i
-											 class="material-icons">visibility</i></a></td>
+									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a
+										 class="waves-effect waves-light btn blurple btn-icon"><i class="material-icons">visibility</i></a></td>
+								</tr>
+								<tr>
+									<td class="flex-center">
+										<div class="row">
+											<div class="input-field col s10 push-s1">
+												<select multiple>
+													<option value="" disabled selected>Choose a channel</option>
+													<optgroup label="Category 1">
+														<option value="1">#welcome</option>
+														<option value="2">#info</option>
+														<option value="3">#rules</option>
+														<option value="4">#porn</option>
+													</optgroup>
+													<optgroup label="General">
+														<option value="5">#general</option>
+														<option value="5">#off-topic</option>
+														<option value="5">#jake-sucks-balls</option>
+													</optgroup>
+
+												</select>
+											</div>
+									</td>
+									<td>
+										<div class="row">
+											<div class="input-field col s10 push-s1">
+												<input value="I am not editable" id="disabled" type="number" class="validate">
+												<label for="disabled">Message ID</label>
+											</div>
+										</div>
+
+									</td>
+									<td><a class="waves-effect waves-light btn red btn-icon" href="role-config.html"><i class="material-icons">delete</i></a><a
+										 class="waves-effect waves-light btn green lighten-1 btn-icon"><i class="material-icons">check</i></a></td>
 								</tr>
 								<tr>
 									<td colspan="3">
@@ -133,17 +166,13 @@
 		</div>
 	</footer>
 
-	<!-- So this is basically a hack, until I come up with a better solution. autocomplete is overridden
-        in the materialize js file & I don't want that.
-        -->
-	<!-- Yo dawg, I heard you like hacks. So I hacked your hack. (moved the sidenav js up so it actually works) -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script>
 		// Hide sideNav
-		$(document).ready(function () {
-			$('.collapsible').collapsible();
-		});
+		$('.collapsible').collapsible();
+		$('select').material_select();
+		$('.dropdown-trigger').dropdown();
 		$('.button-collapse').sideNav({
 			menuWidth: 300, // Default is 300
 			edge: 'left', // Choose the horizontal origin
