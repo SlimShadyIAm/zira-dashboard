@@ -377,7 +377,7 @@ thead {
 	height: 22px;
 	margin: 0 4px 4px 0;
 	padding: 4px;
-	border-color: rgb(66, 133, 244);
+	border-color: #99AAB5;
 	-webkit-box-align: center;
 	align-items: center;
 	display: flex;
@@ -389,7 +389,7 @@ thead {
 	height: 12px;
 	margin-right: 4px;
 	width: 12px;
-	background-color: rgb(66, 133, 244);
+	background-color: #99AAB5;
 }
 
 .role-name {
