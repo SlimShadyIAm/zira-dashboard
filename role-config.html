@@ -82,7 +82,7 @@
                     </div>
                 </div>
                 <div class="message-preview-outer z-depth-4">
-                    <div class="message-header">
+                    <div class="message-header header-closed">
                         <input type="checkbox" id="normal" />
                         <label for="normal">Normal role</label>
                     </div>
@@ -157,7 +157,7 @@
                 </div>
 
                 <div class="message-preview-outer z-depth-4">
-                    <div class="message-header">
+                    <div class="message-header header-closed">
                         <input type="checkbox" id="toggle" />
                         <label for="toggle">Toggle role</label>
                     </div>
@@ -179,7 +179,7 @@
                                     <td>
                                         <div class="roles">
                                             <div class="role" style="border-color:#0f9d58">
-                                               <a class="role-button" style="background-color:#0f9d58"></a>
+                                                <a class="role-button" style="background-color:#0f9d58"></a>
                                                 <div class="role-name">Role</div>
                                             </div>
                                         </div>
@@ -230,7 +230,7 @@
                 </div>
 
                 <div class="message-preview-outer z-depth-4">
-                    <div class="message-header">
+                    <div class="message-header header-closed">
                         <input type="checkbox" id="multi" />
                         <label for="multi">Multi role</label>
                     </div>
@@ -251,23 +251,23 @@
                                     <td>
                                         <div class="roles">
                                             <div class="role" style="border-color:#f55d2b">
-                                               <a class="role-button" style="background-color:#f55d2b"></a>
+                                                <a class="role-button" style="background-color:#f55d2b"></a>
                                                 <div class="role-name">Role</div>
                                             </div>
                                             <div class="role" style="border-color:#8abae2">
-                                               <a class="role-button" style="background-color:#8abae2"></a>
+                                                <a class="role-button" style="background-color:#8abae2"></a>
                                                 <div class="role-name">Role</div>
                                             </div>
                                             <div class="role" style="">
-                                               <a class="role-button" style=""></a>
+                                                <a class="role-button" style=""></a>
                                                 <div class="role-name">Role</div>
                                             </div>
                                             <div class="role" style="border-color:#0f9d58">
-                                               <a class="role-button" style="background-color:#0f9d58"></a>
+                                                <a class="role-button" style="background-color:#0f9d58"></a>
                                                 <div class="role-name">Role</div>
                                             </div>
                                             <div class="role" style="border-color:#0f9d58">
-                                               <a class="role-button" style="background-color:#0f9d58"></a>
+                                                <a class="role-button" style="background-color:#0f9d58"></a>
                                                 <div class="role-name">Role</div>
                                             </div>
                                         </div>
@@ -317,7 +317,7 @@
                     </div>
                 </div>
                 <div class="message-preview-outer z-depth-4">
-                    <div class="message-header">
+                    <div class="message-header header-closed">
                         <input type="checkbox" id="remove" />
                         <label for="remove">Remove role</label>
                     </div>
@@ -339,7 +339,7 @@
                                     <td>
                                         <div class="roles">
                                             <div class="role" style="border-color:#0068db">
-                                               <a class="role-button" style="background-color:#0068db"></a>
+                                                <a class="role-button" style="background-color:#0068db"></a>
                                                 <div class="role-name">Role</div>
                                             </div>
                                         </div>
@@ -390,7 +390,7 @@
                 </div>
                 <div class="col s6 push-s3">
                     <div class="message-preview-outer z-depth-4">
-                        <div class="message-header">
+                        <div class="message-header header-closed">
                             <input type="checkbox" id="once" />
                             <label for="once">One-time role</label>
                         </div>
@@ -414,7 +414,7 @@
                                         <td>
                                             <div class="roles">
                                                 <div class="role" style="border-color:#f32130">
-                                                   <a class="role-button" style="background-color:#f32130"></a>
+                                                    <a class="role-button" style="background-color:#f32130"></a>
                                                     <div class="role-name">Role</div>
                                                 </div>
                                             </div>
@@ -490,29 +490,59 @@
             $('#once-body').hide();
 
         });
+
         $('.dropdown-trigger').dropdown();
+        
         $('.button-collapse').sideNav({
             menuWidth: 300, // Default is 300
             edge: 'left', // Choose the horizontal origin
             closeOnClick: false, // Closes side-nav on <a> clicks, useful for Angular/Meteor
             draggable: true // Choose whether you can drag to open on touch screens
         });
+
         $('select').material_select();
+        
         $('#normal').click(function () {
             $('#normal-body').toggle(this.checked);
-        })
+            if (this.checked) {
+                $(this).closest('div').removeClass('header-closed');
+            } else {
+                $(this).closest('div').addClass('header-closed');
+            }
+        });
         $('#toggle').click(function () {
             $('#toggle-body').toggle(this.checked);
-        })
+            if (this.checked) {
+                $(this).closest('div').removeClass('header-closed');
+            } else {
+                $(this).closest('div').addClass('header-closed');
+            }
+        });
         $('#remove').click(function () {
             $('#remove-body').toggle(this.checked);
-        })
+            if (this.checked) {
+                $(this).closest('div').removeClass('header-closed');
+            } else {
+                $(this).closest('div').addClass('header-closed');
+            }
+
+        });
         $('#multi').click(function () {
             $('#multi-body').toggle(this.checked);
-        })
+            if (this.checked) {
+                $(this).closest('div').removeClass('header-closed');
+            } else {
+                $(this).closest('div').addClass('header-closed');
+            }
+        });
         $('#once').click(function () {
             $('#once-body').toggle(this.checked);
-        })
+            if (this.checked) {
+                $(this).closest('div').removeClass('header-closed');
+            } else {
+                $(this).closest('div').addClass('header-closed');
+            }
+        });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 </body>
