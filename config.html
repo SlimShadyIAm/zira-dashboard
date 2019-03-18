@@ -10,6 +10,7 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="assets/css/custom.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/discord-message.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -34,11 +35,12 @@
 		<li class="no-padding">
 			<ul class="collapsible">
 				<li>
-					<div class="collapsible-header white-text"><img src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp" alt="" class="guild-icon-sidebar">r/ChromeOS</div>
-						<ul class="collapsible-body no-padding">
-							<li><a href="#"><i class="material-icons blurple-item">info</i>Guild info</a></li>
-							<li><a href="#"><i class="material-icons blurple-item">settings</i>Configuration</a></li>
-						</ul>
+					<div class="collapsible-header white-text"><img src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"
+						 alt="" class="guild-icon-sidebar">r/ChromeOS</div>
+					<ul class="collapsible-body no-padding">
+						<li><a href="info.html"><i class="material-icons blurple-item">info</i>Guild info</a></li>
+						<li><a href="config.html"><i class="material-icons blurple-item">settings</i>Configuration</a></li>
+					</ul>
 				</li>
 				<li>
 			</ul>
@@ -49,63 +51,128 @@
 		<section class="content">
 			<div class="page-announce valign-wrapper"><a href="#" data-activates="slide-out" class="button-collapse valign hide-on-large-only"><i
 					 class="material-icons">menu</i></a>
-				<h1 class="page-announce-text valign">// Dashboard </h1>
+				<img class="guild-icon-announce" style="margin-left: 20px;" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp">
+				<h1 class="page-announce-text valign" style="margin-left: 20px">
+					// Guild config </h1>
 			</div>
-				<div class="container">
-					<table class="centered z-depth-4">
-						<thead>
-							<tr>
-								<th></th>
-								<th>Guild name</th>
-								<th>Actions</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr class="hover">
-								<td><img class="guild-icon" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"></td>
-								<td>ChromeOS</td>
-								<td><a class="waves-effect waves-light btn">CONFIG</a></td>
-							</tr>
-							<tr>
-								<td><img class="guild-icon" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"></td>
-								<td>ChromeOS</td>
-								<td><a class="waves-effect waves-light btn">CONFIG</a></td>
-							</tr>
-							<tr>
-								<td><img class="guild-icon" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"></td>
-								<td>ChromeOS</td>
-								<td><a class="waves-effect waves-light btn">CONFIG</a></td>
-							</tr>
-							<tr>
-								<td><img class="guild-icon" src="https://images-ext-2.discordapp.net/external/XwZ02gFU3zQqR4iLRRiMHtmZA0fhUafA3c7za4rdC44/%3Fsize%3D1024/https/media.discordapp.net/icons/253908290105376768/f4e373e1baefc67332e9da706619490b.webp"></td>
-								<td>ChromeOS</td>
-								<td><a class="waves-effect waves-light btn">CONFIG</a></td>
-							</tr>
-						</tbody>
-					</table>
+			<div class="container">
+				<div class="row">
+					<div class="col s12 m8 push-m2">
+						<table class="centered z-depth-4 responsive-table">
+							<thead>
+								<tr>
+									<th>Channel name</th>
+									<th>Message ID</th>
+									<th>Options</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td> <span class="channel-name">#welcome</span></td>
+									<td>123456789</td>
+									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a
+										 class="waves-effect waves-light btn blurple btn-icon"><i class="material-icons">visibility</i></a></td>
+								</tr>
+								<tr>
+									<td> <span class="channel-name">#welcome</span></td>
+									<td>123456789</td>
+									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a
+										 class="waves-effect waves-light btn blurple btn-icon"><i class="material-icons">visibility</i></a></td>
+								</tr>
+								<tr>
+									<td> <span class="channel-name">#welcome</span></td>
+									<td>123456789</td>
+									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a
+										 class="waves-effect waves-light btn blurple btn-icon"><i class="material-icons">visibility</i></a></td>
+								</tr>
+								<tr>
+									<td> <span class="channel-name">#welcome</span></td>
+									<td>123456789</td>
+									<td><a class="waves-effect waves-light btn blurple btn-icon" href="role-config.html"><i class="material-icons">settings</i></a><a
+										 class="waves-effect waves-light btn blurple btn-icon"><i class="material-icons">visibility</i></a></td>
+								</tr>
+								<tr>
+									<td class="flex-center">
+										<div class="row">
+											<div class="input-field col s10 push-s1">
+												<select>
+													<option value="" disabled selected>Choose a channel</option>
+													<optgroup label="Category 1">
+														<option value="1">#welcome</option>
+														<option value="2">#info</option>
+														<option value="3">#rules</option>
+														<option value="4">#porn</option>
+													</optgroup>
+													<optgroup label="General">
+														<option value="5">#general</option>
+														<option value="5">#off-topic</option>
+														<option value="5">#jake-sucks-balls</option>
+													</optgroup>
+
+												</select>
+											</div>
+									</td>
+									<td>
+										<div class="row">
+											<div class="input-field col s10 push-s1">
+												<input value="I am not editable" id="disabled" type="number" class="validate">
+												<label for="disabled">Message ID</label>
+											</div>
+										</div>
+
+									</td>
+									<td><a class="waves-effect waves-light btn red btn-icon" href="role-config.html"><i class="material-icons">delete</i></a><a
+										 class="waves-effect waves-light btn green lighten-1 btn-icon"><i class="material-icons">check</i></a></td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<a class="circle btn btn-floating blurple" href="role-config.html"><i class="material-icons">add</i></a>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
 				</div>
-			</div>
+
+
+				<div class="message-preview-outer z-depth-4">
+					<div class="message-header">
+						Message Preview
+					</div>
+					<div class="message-body">
+						<div class="message-group hide-overflow">
+							<div class="avatar-large animate" style="background-image: url('https://cdn.discordapp.com/embed/avatars/0.png');"></div>
+							<div class="comment">
+								<div class="message first">
+									<h2 style="line-height: 16px;"><span class="username-wrapper v-btm"><strong class="user-name">Discord Bot</strong><span
+											 class="bot-tag">BOT</span></span></span><span class="timestamp">Today
+											at 6:13 PM</span></h2>
+									<div class="message-text">
+										<div class="markup">Hello this is a message yes</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
 		</section>
 	</main>
 	<footer class="page-footer">
 		<div class="footer-copyright">
 			<div class="container">
-				© 2017 Farooq Designs. All rights reserved.
+				Created by <a href="https://github.com/SlimShadyIAm">SlimShadyIAm#1337</a>.
 			</div>
 		</div>
 	</footer>
 
-	<!-- So this is basically a hack, until I come up with a better solution. autocomplete is overridden
-        in the materialize js file & I don't want that.
-        -->
-	<!-- Yo dawg, I heard you like hacks. So I hacked your hack. (moved the sidenav js up so it actually works) -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	<script>
 		// Hide sideNav
-		$(document).ready(function () {
-			$('.collapsible').collapsible();
-		});
+		$('.collapsible').collapsible();
+		$('select').material_select();
+		$('.dropdown-trigger').dropdown();
 		$('.button-collapse').sideNav({
 			menuWidth: 300, // Default is 300
 			edge: 'left', // Choose the horizontal origin

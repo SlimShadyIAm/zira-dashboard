@@ -1,14 +1,20 @@
 @media (min-width:993px) {
+
 	main,
 	footer {
 		padding-left: 300px;
 	}
 
 }
+
 /*  Sidebar */
 
 i.blurple-item {
 	color: #7289DA !important;
+}
+
+.blurple {
+	background-color: #7289DA !important;
 }
 
 form.sidebar-form {
@@ -31,6 +37,7 @@ form.sidebar-form {
 .side-nav .divider {
 	background-color: #99AAB5;
 }
+
 /*  End sidebar */
 
 div.page-announce {
@@ -50,6 +57,28 @@ h1.page-announce-text {
 	margin-left: 50px;
 }
 
+.announcement {
+	width: 100%;
+	padding: 5px 20px;
+	border-radius: 8px;
+	background-color: #7289DA;
+	margin-bottom: 20px;
+}
+
+.announcement p code {
+	background-color: rgba(0, 0, 0, 0.15);
+	padding: 5px;
+	margin: 0 5px;
+	border-radius: 5px;
+}
+
+.announcement p {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 100;
+	font-size: 16px;
+	color: #fff;
+}
+
 body {
 	display: flex;
 	min-height: 100vh;
@@ -59,6 +88,7 @@ body {
 main {
 	flex: 1 0 auto;
 }
+
 .page-footer {
 	padding-top: 0 !important;
 	height: 0;
@@ -204,7 +234,8 @@ div.quick-links a {
 }
 
 
-.content, body {
+.content,
+body {
 	background-color: #2C2F33;
 }
 
@@ -213,16 +244,17 @@ div.quick-links a {
 }
 
 table {
-	background-color:#23272A;
+	background-color: #23272A;
 	color: #99AAB5;
 	border-radius: 10px;
-	width: 40%;
 	margin: 0 auto;
 }
 
-table td {
-	padding: 25px;
+.dropdown-content {
+	width: max-content !important;
+	height: auto !important;
 }
+
 thead {
 	color: #fff;
 	border-bottom-color: #99AAB5;
@@ -237,11 +269,15 @@ thead {
 	margin: 0 15px;
 }
 
+.guild-icon-announce {
+	width: 45px;
+}
+
 .collapsible-header {
 	display: flex;
 	align-items: center;
 	flex-direction: row;
-	padding: 8px 16px !important; 
+	padding: 8px 16px !important;
 }
 
 .collapsible-body {
@@ -251,6 +287,156 @@ thead {
 .collapsible-body li a {
 	padding-left: 45px !important;
 	color: #99AAB5;
+}
+
+.footer-copyright a {
+	color: #9fd5ef;
+}
+
+.channel-name {
+	background-color: rgba(114, 137, 218, .1);
+	color: #7289da;
+}
+
+.btn-icon {
+	padding: 0 15px;
+	margin-right: 10px;
+}
+
+@media (min-width: 1024px) {
+	.boxes-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: start;
+		flex-direction: row;
+	}
+
+	.main-content {
+		margin-top: 90px;
+	}
+}
+
+.boxes-wrapper .xl5 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.message-preview-outer {
+	margin-top: 40px;
+}
+
+.message-body {
+	border: 1px solid #7289DA;
+	width: 100%;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px;
+	padding: 20px;
+	color: #fff;
+}
+
+.message-header {
+	color: #fff;
+	font-size: 18px;
+	width: 100%;
+	background-color: #7289DA;
+	padding: 10px 20px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.btn-small {
+	padding: 0 0.75em
+}
+
+.tiny {
+	font-size: 1em !important;
+}
+
+.roles {
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
+	justify-content: center;
+}
+
+.role {
+	-webkit-box-sizing: border-box;
+	border: 1px solid;
+	border-radius: 11px;
+	box-sizing: border-box;
+	font-size: 12px;
+	font-weight: 500;
+	height: 22px;
+	margin: 0 4px 4px 0;
+	padding: 4px;
+	border-color: #99AAB5;
+	-webkit-box-align: center;
+	align-items: center;
+	display: flex;
+	vertical-align: baseline;
+}
+
+.role-button {
+	border-radius: 50%;
+	height: 12px;
+	margin-right: 4px;
+	width: 12px;
+	background-color: #99AAB5;
+}
+
+.role-name {
+	margin-right: 4px;
+	max-width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0 10px;
+	padding: 0;
+	vertical-align: baseline;
+	color: #fff;
+}
+
+.message-header label {
+	color: #fff;
+}
+
+.input-field {
+	margin-top: 0;
+}
+
+.premium {
+	padding: 10px;
+	color: #fff;
+	margin-bottom: 10px;
+	font-weight: 300;
+	letter-spacing: .5px;
+	text-transform: uppercase;
+	font-size: 18px;
+	border-radius: 4px;
+	width: 80%;
+	display: block;
+	margin: 0 auto
+}
+
+.premium i {
+	display: block;
+}
+
+.header-closed {
+	border-radius: 8px;
 }
 
 @media (max-width: 320px) {
