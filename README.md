@@ -1,18 +1,12 @@
-# Materialized Admin
+# Zira Dashboard
 
-This is a simple template for an administrative panel that is based on the [materializecss.com](http://materializecss.com) framework to give the site a beautiful look, adhering to the principles of Google's Material design language. This template is currently in use as the moderator control panel at [opdessertstorm.com](https://opdessertstorm.com), a game with over **8,000 accounts**. 
+This template, based off of my [Material Admin](https://github.com/SlimShadyIAm/material-admin) template, was created as a static HTML mockup for an administrative dashboard for [Zira](https://zira.ovh), a Discord bot with almost 10 million users and is in use in 57,000 guilds. The dashboard serves as a graphical way to control the bot's configuration.
 
 ## Demo 
 
-A demo can be found on my site, at [farooq.xyz/modcp](https://farooq.xyz/modcp) 
-
-## Contributors 
-
-* [Me](https://github.com/SlimShadyIAm)
-* [Disyer](https://github.com/darktohka)
-* [masterjumblespeed](https://github.com/sctigercat1)
+A demo can be found on my site, at [projects.farooq.xyz/zira](https://projects.farooq.xyz/zira) 
 
 ## Acknowledgements 
 
 * Materialize CSS, the CSS framework used to make this site possible. - [Link](http://materializecss.com)
-* Operation Dessert Storm's team, for whom this was designed for - [Link](https://opdessertstorm.com)
+* The creators of Zira, for whom this was made - [Zira](https://zira.ovh)
